@@ -16,12 +16,21 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  text-align: left;
 }
 
 header h1 {
@@ -190,6 +199,98 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+/* User Menu Styles */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-icon-btn {
+  background-color: white;
+  color: #1a237e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-icon-btn:hover {
+  background-color: #f0f0f0;
+}
+
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+#username-display {
+  font-weight: bold;
+}
+
+.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+#login-form .form-group {
+  margin-bottom: 15px;
+}
+
+#login-error {
+  margin-top: 10px;
 }
 
 footer {
